@@ -55,5 +55,5 @@ Am just grateful i get the chance to solidify my skill on coding.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@iceberg61](https://www.frontendmentor.io/profile/iceberg61)
+- Twitter - [@ayanakoji_kiyo](https://www.twitter.com/ayanakoji_kiyo)
