@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --color-Desaturated-Red: hsl(0, 36%, 70%);
+    --color-Soft-Red: hsl(0, 93%, 68%);
+    --color-Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --color-Linear-135deg-from-hsl: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
+    --color-Linear-135deg-from-hsle:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body  {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    background-image: var(--color-Linear-135deg-from-hsl);
+}
+
+header {
+    position: absolute;
+    top: 3rem;
+    padding: 0 10%;
+}
+
+.left {
+    padding: 0 10%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    background-image: url(../images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.heading {
+    margin: 9rem 0 1rem ;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1rem;
+    color: var(--color-Dark-Grayish-Red);
+    max-width: 30rem;
+}
+
+span {
+    color: var(--color-Desaturated-Red);
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    max-width: 30rem;
+    color: var(--color-Desaturated-Red);
+    margin: 0 0 1rem;
+}
+
+form {
+    margin: 3rem 0 0;
+    width: 100%;
+    position: relative;
+    height: 10%;
+    max-width: 30rem;
+}
+
+input {
+    position: absolute;
+    border-radius: 50px;
+    padding: 1.3rem 2rem;
+    width: 100%;
+    background-image: inherit;
+    outline: none;
+    border: 1px solid var(--color-Desaturated-Red);
+}
+
+::placeholder {
+    font-weight: 700;
+    background-image: inherit;
+    color: var(--color-Desaturated-Red);
+}
+
+.button {
+    border: 1px solid hsl(0, 74%, 74%);
+    width: 20%;
+    border-radius: 50px;
+    padding: 1.3rem 2rem;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: var(--color-Linear-135deg-from-hsle);
+    box-shadow: rgba(206, 151, 151, 0.8) 0px 1px 7px 0px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+}
+
+.bg-form {
+
+    border:2px solid var(--color-Soft-Red);
+}
+
+.icon-error {
+    width: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    
+}
+
+.email-paragraph {
+    color: var(--color-Soft-Red);
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 765px) {
+
+    header {
+        position: relative;
+        top: 0;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+
+    .logo {
+        margin: 30px 0px;
+        width: 5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .right {
+        width: 100%;
+        height: 60%;
+    }
+
+    .icon-error {
+        width: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 5rem;
+        
+    }
+    .btn-icon {
+        position: absolute;
+        top: 1.3rem;
+        right: 2rem;
+    
+    }
+}
