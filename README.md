@@ -34,8 +34,7 @@ These are my screenshots of my work
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://iceberg61.github.io/icebeBase-Apparel-coming-soon-page/)
 
 
 
