@@ -1,25 +1,23 @@
-let form = document.getElementById('form');
-let email = document.getElementById('email');
-let error = document.getElementById('icon-error');
-let paragraph = document.getElementById('email-msg');
+let form = document.getElementById('form'),
+    email = document.getElementById('email'),
+    error = document.getElementById('icon-error'),
+    paragraph = document.getElementById('email-msg'),
+    patterns = /^[^ ]+@[^ ]*\.[a-z]{3,4}$/;
 
-email.addEventListener('click', validateEmail)
-let patterns = /^[^ ]+@[^ ]*\.[a-z]{3,4}$/;
+email.addEventListener('input', validateEmail);
+
 function validateEmail() {
-    
-
-    if (!email.value.match(patterns)) {
-        email.classList.add('bg-form')
-        error.src = '../images/icon-error.svg'
+    if (email.value.trim() === '') {
+        paragraph.innerHTML = "Please provide an email";
+        email.classList.add('bg-form');
+        error.src = '';
+    } else if (!email.value.match(patterns)) {
         paragraph.innerHTML = "Please provide a valid email";
-        
+        email.classList.add('bg-form');
+        error.src = '../images/icon-error.svg';
     } else {
         paragraph.innerHTML = "Please submit the email";
-
+        email.classList.remove('bg-form');
+        error.src = '';
     }
-     
-    if (email.value == '') {
-        paragraph.innerHTML = "Please provide a email";
-    }
-
 }
